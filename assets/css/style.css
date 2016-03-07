@@ -1,0 +1,207 @@
+div.parallax-container{
+	height: 475px;
+}
+div.parallax img{
+	height: 1000px;
+}
+div.salon img{
+	bottom: -100px;
+}
+div.bottles img{
+	bottom: -150px;
+}
+@font-face {
+    font-family: rust;
+    src: url("/assets/font/rust.ttf");
+}
+@font-face {
+	font-family: rust_head;
+	src: url("/assets/font/rust_head.ttf");
+}
+@font-face {
+	font-family: niconne;
+	src: url("/assets/font/niconne.ttf");
+}
+nav, nav ul a{
+	font-family: rust_head;
+	font-size: 1.2em;
+	background-color: #093359;
+	padding: 0 10px;
+}
+nav .nav-wrapper i{
+	display: inline-block;
+	vertical-align: top;
+}
+nav ul li:first-child{
+	padding: 0px 15px;
+}
+a.brand-logo{
+	height: 64px;
+}
+a.brand-logo>img{
+	margin-top: 3px;
+}
+li.icons div{
+	height: 64px;
+}
+li.icons a{
+	/*background: lightblue;*/
+}
+#fbook{
+	height: 22px;
+	width: auto;
+}
+#yelp{
+	height: 30px;
+	width: auto;
+}
+div.section{
+	background-color: white;
+	min-height: 350px;
+}
+div.intro{
+	font-family: rust_head;
+	font-weight: bold;
+}
+div.intro p{
+	font-size: 1.5em;
+}
+h3.header{
+	font-family: niconne;
+	margin-top: 0px;
+}
+a.brand-logo img{
+	width: 100px;
+	height: auto;
+}
+/*div.services h3.header{
+	margin-bottom: 75px;
+}*/
+div.services div{
+	position: relative;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	padding: 0px;
+}
+div.services_bottom div{
+	position: relative;
+	width: 25%;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-bottom: 30px;
+}
+div.bordering img{
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	width: 25%;
+	height: auto;
+	border-radius: 50%;
+    background-color: #d9e6f2;
+}
+div.bordering img#perm{
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	width: 25%;
+	height: auto;
+	border-radius: 50%;
+	background-color: #d9e6f2;
+}
+div.services div.bordering, div.services_bottom div.bordering{
+	height: 90%;
+	width: 90%;
+	margin: 10px;
+	padding: 2px;
+	border-top: 2px solid black;
+	border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-color: #6699cc;
+	color: black;
+}
+div.services h5.title, div.services_bottom h5.title{
+	font-family: rust_head;
+	font-size: 1.8em;
+	padding-top: 50px;
+}
+div.services p.content, div.services_bottom p.content{
+	font-size: 1.5em;
+	font-family: rust_head;
+}
+div.about div{
+	width: 20%;
+	height: 200px;
+	/*border-top-left-radius: 20px;
+	border-bottom-right-radius: 20px;*/
+}
+h5.stylist_name{
+	color: #093359;
+	font-family: niconne;
+	font-size: 2.0em;
+}
+p.stylist_content{
+	font-family: rust_head;
+	font-size: 1.5em;
+}
+div.contact{
+	font-family: rust_head;
+	height: 465px;
+}
+div.contact_info h6{
+	font-size: 2.0em;
+}
+#map{
+	height: 400px;
+}
+#right-panel select, #right-panel input {
+	font-size: 12px;
+}
+#right-panel select {
+	width: 100%;
+}
+#right-panel i {
+	font-size: 12px;
+}
+#right-panel {
+    height: 400px;
+    font-family: rust_head;
+	line-height: 30px;
+	padding-left: 10px;
+    float: right;
+    width: auto;
+    overflow: scroll;
+}
+#directions{
+	margin-top: 10px;
+	background-color: #6699cc;
+	font-size: 1.1em;
+}
+footer.page-footer{
+	height: 57px;
+	padding: 0px;
+	font-family: rust_head;
+	font-size: 1.5em;
+	background-color: #093359;
+}
+	div.footer-copyright{
+		height: 57px !important;
+	}
+	footer.page-footer p{
+		height: 57px !important;
+		margin: 0px 30px;
+		display: inline-block;
+		vertical-align: top;
+	}
+	footer.page-footer img{
+		width: 100px;
+		height: 57px;
+	}
