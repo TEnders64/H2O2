@@ -1,3 +1,9 @@
+@-webkit-viewport   { width: device-width; }
+@-moz-viewport      { width: device-width; }
+@-ms-viewport       { width: device-width; }
+@-o-viewport        { width: device-width; }
+@viewport           { width: device-width; }
+
 div.parallax-container{
 	height: 475px;
 }
@@ -34,6 +40,23 @@ nav .nav-wrapper i{
 }
 nav ul li:first-child{
 	padding: 0px 15px;
+}
+nav ul.side-nav li{
+	padding: 0px;
+}
+nav ul.side-nav a{
+	width: 100%;
+	font-family: rust_head;
+	font-size: 1.5em;
+	background-color: white;
+	color: black;
+}
+nav ul.side-nav i{
+	padding-top: 15px;
+}
+nav ul.side-nav li.icons{
+	display: inline-block;
+	width: 45%;
 }
 a.brand-logo{
 	height: 64px;
@@ -74,9 +97,6 @@ a.brand-logo img{
 	width: 100px;
 	height: auto;
 }
-/*div.services h3.header{
-	margin-bottom: 75px;
-}*/
 div.services div{
 	position: relative;
 	height: 200px;
@@ -140,8 +160,9 @@ div.services p.content, div.services_bottom p.content{
 div.about div{
 	width: 20%;
 	height: 200px;
-	/*border-top-left-radius: 20px;
-	border-bottom-right-radius: 20px;*/
+}
+div.about hr{
+	width: 50%;
 }
 h5.stylist_name{
 	color: #093359;
@@ -192,9 +213,6 @@ footer.page-footer{
 	font-size: 1.5em;
 	background-color: #093359;
 }
-	div.footer-copyright{
-		height: 57px !important;
-	}
 	footer.page-footer p{
 		height: 57px !important;
 		margin: 0px 30px;
@@ -205,3 +223,6 @@ footer.page-footer{
 		width: 100px;
 		height: 57px;
 	}
+div.footer-copyright{
+	height: 57px !important;
+}

@@ -1,0 +1,16 @@
+- Hash jumping looks to be working now...
+
+Google Maps - 
+	- (DONE) Map doesn't center directions
+	Should probably make the map static in mobile
+		- How to do directions then?
+
+Mobile -
+	- (DONE) Sidenav styling
+	See Google Maps
+
+Content - 
+	Services sections still need filled in
+
+Facebook -
+	Like Us on Facebook?

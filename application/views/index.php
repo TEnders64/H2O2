@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>H2O2 - Capitol Hill</title>
 	<link rel="stylesheet" href="/assets/css/materialize.min.css">
 	<link rel="stylesheet" href="/assets/css/style.css">
@@ -10,10 +11,36 @@
 	<script src="/assets/js/materialize.min.js"></script>
 	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB2a6yPTtz9dMjpVlooC_dPP0fBIh1Dod4"></script>
 	<script>
+		// Copyright 2014-2015 Twitter, Inc.
+		// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+			var msViewportStyle = document.createElement('style')
+			msViewportStyle.appendChild(
+		    	document.createTextNode(
+		    		'@-ms-viewport{width:auto!important}'
+		    	)
+		  	)
+		  	document.querySelector('head').appendChild(msViewportStyle)
+		}
+		// accounting for fixed navbar covering the initial content when jumping from hash to hash
+		function shiftWindow(){ 
+			if (window.location.hash !== '#contact'){
+				scrollBy(0, -70);
+			}else{
+				scrollBy(0, -5);
+			}
+		}
+		window.addEventListener("hashchange", shiftWindow);
+		function load() {
+			if (window.location.hash) shiftWindow(); 
+		}
+
 		$(document).ready(function(){
+
+			$('.button-collapse').sideNav();
 			$('.parallax').parallax();
-			$('li.icons div, h6.contact_info').addClass('valign-wrapper');
-			$('li.icons img').addClass('valign');
+			$('li.icons div, h6.contact_info, ul#slide-out li').addClass('valign-wrapper');
+			$('li.icons img, ul#slide-out a').addClass('valign');
 			$('div.services div.bordering, div.about div, div.services_bottom div.bordering').addClass('hoverable');
 
 			var map;
@@ -28,7 +55,7 @@
 					scrollwheel: false
 				}
 				map = new google.maps.Map(document.getElementById('map'), mapOptions);
-				
+
 				var marker = new google.maps.Marker({
 					position: salon,
 					title: 'H2O2',
@@ -65,6 +92,7 @@
 
 				getDirections(coords);
 				$('#right-panel').css('width', '390px');
+				google.maps.event.trigger(map, 'resize');
 			}
 
 			function getDirections(user_location){
@@ -95,7 +123,7 @@
 		})
 	</script>
 </head>
-<body id="top">
+<body id="top" onload="load()">
 	<?php $this->load->view('/partials/header'); ?>
 	<main>
 		<div class="parallax-container">
@@ -115,7 +143,7 @@
 			<div class="parallax salon"><img src="/assets/images/inside_BW.jpg" alt="salon_interior"></div>
 		</div>
 		<div class="section center z-depth-2">
-			<div class="row services">
+			<div id="services" class="row services">
 				<h3 class="header center">Services</h3>
 				<div class="col l4 m4 s12">
 					<div class="bordering">
@@ -171,18 +199,22 @@
 				<h3 class="header center">The Team</h3>
 				<div class="col l3 m3 s12">
 					<h5 class="stylist_name">Chris</h5>
+					<hr>
 					<p class="stylist_content">Salon owner and stylist. She's 5' 10" and cool as hell.</p>
 				</div>
 				<div class="col l3 m3 s12">
 					<h5 class="stylist_name">Olivia</h5>
+					<hr>
 					<p class="stylist_content">She's a total sweetheart with a bit of an edge, and is always down for some good tunes.</p>
 				</div>
 				<div class="col l3 m3 s12">
 					<h5 class="stylist_name">Kasey</h5>
+					<hr>
 					<p class="stylist_content">She's fashionable and fun and up on her pop culture for sure.</p>
 				</div>
 				<div class="col l3 m3 s12">
 					<h5 class="stylist_name">Brittany</h5>
+					<hr>
 					<p class="stylist_content">She's a world traveler out to save the world with some pretty cool stories.</p>
 				</div>
 			</div>
@@ -193,13 +225,13 @@
 		<div class="section center z-depth-2">
 			<div class="row contact">
 				<h3 id="contact" class="header">Contact Us</h3>
-				<div class="col l10">
+				<div class="col s6 l10">
 					<div id="right-panel"></div>
 					<div id="map"></div>
 				</div>
-				<div class="col l2 contact_info center">
+				<div class="col s6 l2 contact_info center">
 					<h6>206-329-3333<hr>1900 East Aloha St, Seattle, WA 98112</h6>
-					<a id="directions" class="waves-effect waves-light btn"><i class="material-icons left">navigation</i>Directions</a>
+					<a id="directions" class="waves-effect waves-light btn hide-on-small-only"><i class="material-icons left">navigation</i>Directions</a>
 				</div>
 			</div>
 		</div>	
