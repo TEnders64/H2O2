@@ -49,9 +49,11 @@
 					$('.parallax img').css('bottom', '-150px');
 					$('.parallax-container').css('height', '400px');
 				}else{
-					$('.parallax').parallax();
+					// $('.parallax').parallax();
+					$('.parallax img').css('transform', 'none');
+
 					$('.parallax img').css('height', '400px');
-					$('.parallax img').css('bottom', '-150px');
+					$('.parallax img').css('bottom', '-50px');
 					$('.parallax-container').css('height', '200px');
 				}
 			});
@@ -63,10 +65,10 @@
 				$('.parallax img').css('bottom', '-150px');
 				$('.parallax-container').css('height', '400px');
 			}else{
-				$('.parallax').parallax();
+				$('.parallax img').css('transform', 'none');
 				// console.log('window width under 860!');
 				$('.parallax img').css('height', '400px');
-				$('.parallax img').css('bottom', '-150px');
+				$('.parallax img').css('bottom', '-50px');
 				$('.parallax-container').css('height', '200px');
 			}
 
