@@ -8,31 +8,31 @@
 div.parallax-container{
 	height: 400px;
 }
-/*div.parallax img{
-	height: 1000px;
-}*/
 div.parallax{
 	height: 200px;
 }
 div.building img{
 	width: auto;
-	height: 400px;
+	/*height: 400px;*/
 	bottom: -200px;
 }
 div.salon img{
 	width: auto;
-	height: 400px;
+	/*height: 400px;*/
 	bottom: -150px;
 }
 div.salon2 img{
 	width: auto;
-	height: 400px;
+	/*height: 400px;*/
 	bottom: -150px;
 }
 div.bottles img{
 	width: auto;
-	height: 400px;
+/*	height: 400px;*/
 	bottom: -100px;
+}
+div.parallax img{
+	height: 1000px;
 }
 @font-face {
     font-family: rust;
