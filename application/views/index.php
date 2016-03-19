@@ -30,7 +30,9 @@
 				scrollBy(0, -30);
 			}
 		}
+		
 		window.addEventListener("hashchange", shiftWindow);
+		
 		function load() {
 			if (window.location.hash) shiftWindow(); 
 		}
@@ -45,7 +47,7 @@
 					$('.parallax img').css('bottom', '-150px');
 					$('.parallax-container').css('height', '475px');
 				}else{
-					$('.parallax').parallax();
+					// $('.parallax').parallax();
 					$('.parallax img').css('height', '400px');
 					$('.parallax img').css('bottom', '-50px');
 					$('.parallax-container').css('height', '200px');
@@ -59,7 +61,7 @@
 				$('.parallax img').css('bottom', '-150px');
 				$('.parallax-container').css('height', '475px');
 			}else{
-				$('.parallax').parallax();
+				// $('.parallax').parallax();
 				console.log('window width under 860!');
 				$('.parallax img').css('height', '400px');
 				$('.parallax img').css('bottom', '-50px');
