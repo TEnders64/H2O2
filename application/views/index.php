@@ -22,7 +22,7 @@
 		  	)
 		  	document.querySelector('head').appendChild(msViewportStyle)
 		}
-		// accounting for fixed navbar covering the initial content when jumping from hash to hash
+		//accounting for fixed navbar covering the initial content when jumping from hash to hash
 		function shiftWindow(){ 
 			if (window.location.hash !== '#contact'){
 				scrollBy(0, -70);
@@ -34,7 +34,9 @@
 		window.addEventListener("hashchange", shiftWindow);
 		
 		function load() {
-			if (window.location.hash) shiftWindow(); 
+			if (window.location.hash) {
+				shiftWindow(); 
+			}
 		}
 
 		$(document).ready(function(){
@@ -62,7 +64,7 @@
 				$('.parallax-container').css('height', '475px');
 			}else{
 				// $('.parallax').parallax();
-				console.log('window width under 860!');
+				// console.log('window width under 860!');
 				$('.parallax img').css('height', '400px');
 				$('.parallax img').css('bottom', '-50px');
 				$('.parallax-container').css('height', '200px');

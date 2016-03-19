@@ -11,13 +11,24 @@ div.parallax-container{
 div.parallax img{
 	height: 1000px;
 }
+div.building img{
+	width: auto;
+	height: 300px;
+	bottom: -150px;
+}
 div.salon img{
+	width: auto;
+	height: 300px;
 	bottom: -150px;
 }
 div.salon2 img{
+	width: auto;
+	height: 300px;
 	bottom: -150px;
 }
 div.bottles img{
+	width: auto;
+	height: 300px;
 	bottom: -100px;
 }
 @font-face {
