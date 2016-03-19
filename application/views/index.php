@@ -27,7 +27,7 @@
 			if (window.location.hash !== '#contact'){
 				scrollBy(0, -70);
 			}else{
-				scrollBy(0, -5);
+				scrollBy(0, -30);
 			}
 		}
 		window.addEventListener("hashchange", shiftWindow);
@@ -37,8 +37,41 @@
 
 		$(document).ready(function(){
 
-			$('.button-collapse').sideNav();
-			$('.parallax').parallax();
+			$(window).resize(function(){
+				var win = $(window);
+				if (win.width() > 860){
+					$('.parallax').parallax();
+					$('.parallax img').css('height', '1000px');
+					$('.parallax img').css('bottom', '-150px');
+					$('.parallax-container').css('height', '475px');
+				}else{
+					$('.parallax').parallax();
+					$('.parallax img').css('height', '400px');
+					$('.parallax img').css('bottom', '-50px');
+					$('.parallax-container').css('height', '200px');
+				}
+			});
+
+			var win = $(window);
+			if (win.width() > 860){
+				$('.parallax').parallax();
+				$('.parallax img').css('height', '1000px');
+				$('.parallax img').css('bottom', '-150px');
+				$('.parallax-container').css('height', '475px');
+			}else{
+				$('.parallax').parallax();
+				console.log('window width under 860!');
+				$('.parallax img').css('height', '400px');
+				$('.parallax img').css('bottom', '-50px');
+				$('.parallax-container').css('height', '200px');
+			}
+
+			//activating the hamburger side nav
+			$('.button-collapse').sideNav({
+				menuWidth: 200,
+				closeOnClick: true
+			});
+
 			$('li.icons div, h6.contact_info, ul#slide-out li').addClass('valign-wrapper');
 			$('li.icons img, ul#slide-out a').addClass('valign');
 			$('div.services div.bordering, div.about div, div.services_bottom div.bordering').addClass('hoverable');
@@ -127,7 +160,7 @@
 	<?php $this->load->view('/partials/header'); ?>
 	<main>
 		<div class="parallax-container">
-			<div class="parallax building"><img src="/assets/images/storefront_BW.jpg" alt="salon"></div>
+			<div class="parallax building"><img id="salon" src="/assets/images/storefront_BW.jpg" alt="salon"></div>
 		</div>
 		<div class="section intro z-depth-2">
 		    <div class="row container">

@@ -4,6 +4,7 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
+
 div.parallax-container{
 	height: 475px;
 }
@@ -11,10 +12,13 @@ div.parallax img{
 	height: 1000px;
 }
 div.salon img{
-	bottom: -100px;
+	bottom: -150px;
+}
+div.salon2 img{
+	bottom: -150px;
 }
 div.bottles img{
-	bottom: -150px;
+	bottom: -100px;
 }
 @font-face {
     font-family: rust;
@@ -226,3 +230,22 @@ footer.page-footer{
 div.footer-copyright{
 	height: 57px !important;
 }
+
+/*@media screen and (max-device-width: 860px){
+
+	div.parallax-container{
+		height: 232px;
+	}
+	div.parallax img{
+		height: 500px;
+	}
+	div.salon img{
+		bottom: -150px;
+	}
+	div.salon2 img{
+		bottom: -150px;
+	}
+	div.bottles img{
+		bottom: -100px;
+	}
+}*/
