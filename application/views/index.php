@@ -45,31 +45,50 @@
 				var win = $(window);
 				if (win.width() > 860){
 					$('.parallax').parallax();
-					$('.parallax img').css('height', '1000px');
-					$('.parallax img').css('bottom', '-150px');
-					$('.parallax-container').css('height', '400px');
-				}else{
-					// $('.parallax').parallax();
-					$('.parallax img').css('transform', 'none');
+					$('.parallax img').css('height', '750px');
+					$('#building, #salon2').css('bottom', '-50px');
+					$('#salon1, #bottles').css('bottom', '-100px');
+					// $('.building').html('<img id="salon" src="/assets/images/storefront_BW.jpg" alt="salon">');
+					// $('.parallax img').css('height', '1000px');
+					// $('.parallax img').css('width', 'auto');
+					// $('.parallax img').css('bottom', '-150px');
+					// $('.parallax-container').css('height', '400px');
 
-					$('.parallax img').css('height', '400px');
-					$('.parallax img').css('bottom', '-50px');
-					$('.parallax-container').css('height', '200px');
+				}else{
+					$('.parallax').parallax();
+					// $('.parallax img').css('transform', 'none');
+					// $('.building').html('<img id="salon" src="/assets/images/storefront_BW_small.jpg" alt="salon">');
+
+					$('.parallax img').css('height', '450px');
+					$('#building, #salon2').css('bottom', '0px');
+					$('#salon1, #bottles').css('bottom', '0px');
+					// $('.parallax img').css('bottom', '-50px');
+					// $('.parallax-container').css('height', '300px');
 				}
 			});
 
 			var win = $(window);
 			if (win.width() > 860){
 				$('.parallax').parallax();
-				$('.parallax img').css('height', '1000px');
-				$('.parallax img').css('bottom', '-150px');
-				$('.parallax-container').css('height', '400px');
+				$('.parallax img').css('height', '750px');
+				$('#building, #salon2').css('bottom', '-50px');
+				$('#salon1, #bottles').css('bottom', '-100px');
+				// $('.building').html('<img id="salon" src="/assets/images/storefront_BW.jpg" alt="salon">');
+				// $('.parallax img').css('height', '1000px');
+				// $('.parallax img').css('width', 'auto');
+				// $('.parallax img').css('bottom', '-150px');
+				// $('.parallax-container').css('height', '400px');
+
 			}else{
-				$('.parallax img').css('transform', 'none');
+				$('.parallax').parallax();
+				// $('.parallax img').css('transform', 'none');
 				// console.log('window width under 860!');
-				$('.parallax img').css('height', '400px');
-				$('.parallax img').css('bottom', '-50px');
-				$('.parallax-container').css('height', '200px');
+				// $('.building').html('<img id="salon" src="/assets/images/storefront_BW_small.jpg" alt="salon">');
+				$('.parallax img').css('height', '450px');
+				$('#building, #salon2').css('bottom', '0px');
+				$('#salon1, #bottles').css('bottom', '0px');
+
+				// $('.parallax-container').css('height', '300px');
 			}
 
 			//activating the hamburger side nav
@@ -166,7 +185,7 @@
 	<?php $this->load->view('/partials/header'); ?>
 	<main>
 		<div class="parallax-container">
-			<div class="parallax building"><img id="salon" src="/assets/images/storefront_BW.jpg" alt="salon"></div>
+			<div class="parallax"><img id="building" src="/assets/images/storefront_BW.jpg" alt="salon"></div>
 		</div>
 		<div class="section intro z-depth-2">
 		    <div class="row container">
@@ -179,7 +198,7 @@
 		    </div>
 		</div>
 		<div class="parallax-container">
-			<div class="parallax salon"><img src="/assets/images/inside_BW.jpg" alt="salon_interior"></div>
+			<div class="parallax salon"><img id="salon1" src="/assets/images/inside_BW.jpg" alt="salon_interior"></div>
 		</div>
 		<div class="section center z-depth-2">
 			<div id="services" class="row services">
@@ -231,7 +250,7 @@
 			</div>
 		</div>
 		<div class="parallax-container">
-			<div class="parallax bottles"><img src="/assets/images/bottle_row_BW.jpg" alt="aveda_shampoo_bottles"></div>
+			<div class="parallax bottles"><img id="bottles" src="/assets/images/bottle_row_BW.jpg" alt="aveda_shampoo_bottles"></div>
 		</div>
 		<div class="section center z-depth-2">
 			<div id="about" class="row about">
@@ -259,7 +278,7 @@
 			</div>
 		</div>
 		<div class="parallax-container">
-			<div class="parallax salon2"><img src="/assets/images/inside2_BW.jpg" alt="salon_interior2"></div>
+			<div class="parallax salon2"><img id="salon2" src="/assets/images/inside2_BW.jpg" alt="salon_interior2"></div>
 		</div>
 		<div class="section center z-depth-2">
 			<div class="row contact">

@@ -6,33 +6,16 @@
 
 
 div.parallax-container{
-	height: 400px;
-}
-div.parallax{
-	height: 200px;
-}
-div.building img{
-	width: auto;
-	/*height: 400px;*/
-	bottom: -400px;
-}
-div.salon img{
-	width: auto;
-	/*height: 400px;*/
-	bottom: -150px;
-}
-div.salon2 img{
-	width: auto;
-	/*height: 400px;*/
-	bottom: -150px;
-}
-div.bottles img{
-	width: auto;
-/*	height: 400px;*/
-	bottom: -100px;
+	height: 450px;
 }
 div.parallax img{
-	height: 1000px;
+	height: 750px;
+}
+#building, #salon2{
+	bottom: -50px;
+}
+#salon1, #bottles{
+	bottom: -100px;
 }
 @font-face {
     font-family: rust;
