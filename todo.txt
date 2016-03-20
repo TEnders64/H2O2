@@ -15,3 +15,8 @@ Content -
 
 Facebook -
 	Like Us on Facebook?
+
+Text - 
+	Put into em or % so it scales on mobile!!!
+Images -
+	Put into em for width. height we'll auto.
