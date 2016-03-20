@@ -62,13 +62,14 @@
 					$('#salon1, #bottles').css('bottom', '0px');
 				}else if ((win.width() <= 600) && (win.width() >= 450)){
 					$('.parallax').parallax();
-					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					$('div.services div, div.services_bottom div').css('margin-top', '0px');
+
+					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					// $('div.services div, div.services_bottom div').css('margin-top', '0px');
 					$('#first_service_div').css('margin-top', '70px');
 				}else{
 					$('.parallax').parallax();
-					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					$('div.services div, div.services_bottom div').css('margin-top', '0px');
+					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					// $('div.services div, div.services_bottom div').css('margin-top', '0px');
 					$('#first_service_div').css('margin-top', '50px');
 				}
 			});
@@ -93,13 +94,14 @@
 				// $('.parallax-container').css('height', '300px');
 			}else if ((win.width() <= 600) && (win.width() >= 450)){
 				$('.parallax').parallax();
-				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				$('div.services div, div.services_bottom div').css('margin-top', '0px');
+				
+				// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				// $('div.services div, div.services_bottom div').css('margin-top', '0px');
 				$('#first_service_div').css('margin-top', '70px');
 			}else{
 				$('.parallax').parallax();
-				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				$('div.services div, div.services_bottom div').css('margin-top', '0px');
+				// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				// $('div.services div, div.services_bottom div').css('margin-top', '0px');
 				$('#first_service_div').css('margin-top', '50px');
 			}
 
@@ -307,7 +309,8 @@
 				</div>
 				<div class="col s6 l2 contact_info center">
 					<h6>206-329-3333<hr>1900 East Aloha St, Seattle, WA 98112</h6>
-					<a id="directions" class="waves-effect waves-light btn hide-on-med-and-down"><i class="material-icons left">navigation</i>Directions</a>
+					<a class="directions waves-effect waves-light btn hide-on-med-and-down">Directions</a>
+					<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22">Directions</a>
 				</div>
 			</div>
 		</div>	

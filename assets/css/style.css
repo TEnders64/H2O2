@@ -98,6 +98,9 @@ a.brand-logo img{
 	width: 100px;
 	height: auto;
 }
+div.services_bottom{
+	margin-top: -20px;
+}
 div.services div{
 	position: relative;
 	height: 200px;
@@ -123,7 +126,7 @@ div.bordering hr{
 }
 div.bordering img{
 	position: absolute;
-	right: -12%;
+	right: -18%;
 	top: 0%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
@@ -134,7 +137,7 @@ div.bordering img{
 }
 div.bordering img#perm{
 	position: absolute;
-	right: -12%;
+	right: -18%;
 	top: 0%;
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -208,7 +211,7 @@ div.contact_info h6{
     width: auto;
     overflow: scroll;
 }
-#directions{
+.directions{
 	margin-top: 10px;
 	background-color: #6699cc;
 	font-size: 1.1em;

@@ -7,8 +7,8 @@ Google Maps -
 
 Mobile -
 	- (DONE) Sidenav styling
-	See Google Maps
-	My phone takes a long time to load the page...image size? safari?
+	- (DONE) See Google Maps
+	- (DONE - smaller images) My phone takes a long time to load the page...image size? safari?
 
 Content - 
 	Services sections still need filled in
