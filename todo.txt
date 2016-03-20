@@ -3,7 +3,7 @@
 Google Maps - 
 	- (DONE) Map doesn't center directions
 	Should probably make the map static in mobile
-		- How to do directions then?
+		- (DONE) How to do directions then? Link either sends to google maps online or finds you have GMaps installed
 
 Mobile -
 	- (DONE) Sidenav styling
@@ -11,12 +11,13 @@ Mobile -
 	- (DONE - smaller images) My phone takes a long time to load the page...image size? safari?
 
 Content - 
-	Services sections still need filled in
+	- Intro and Services sections still need filled in
 
 Facebook -
 	Like Us on Facebook?
 
 Text - 
-	Put into em or % so it scales on mobile!!!
+	(DONE) Put into em or % so it scales on mobile!!!
+
 Images -
-	Put into em for width. height we'll auto.
+	(DONE - didn't do this but it works) Put into em for width. height we'll auto.

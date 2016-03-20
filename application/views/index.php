@@ -116,7 +116,9 @@
 			$('div.services div.bordering, div.about div, div.services_bottom div.bordering').addClass('hoverable');
 
 			var map;
-			var salon = {lat: 47.6270111, lng: -122.307025};
+			var marker;
+			// var salon = {lat: 47.6270111, lng: -122.307025};
+			var salon = {lat: 47.6269551, lng: -122.3092533};
 
 			function initialize(){
 				var mapOptions = {
@@ -128,7 +130,7 @@
 				}
 				map = new google.maps.Map(document.getElementById('map'), mapOptions);
 
-				var marker = new google.maps.Marker({
+				marker = new google.maps.Marker({
 					position: salon,
 					title: 'H2O2',
 					info: '1900 E Aloha, Seattle, WA, 98112',
@@ -188,6 +190,8 @@
 				      directionsDisplay.setDirections(response);
 				    }
 			  	});
+
+			  	marker.setMap(null);
 			}
 
 			google.maps.event.addDomListener(window, 'load', initialize);
@@ -222,7 +226,7 @@
 						<img id="scissors" src="/assets/images/scissors2.png" alt="haircuts">
 						<h5 class="title">Haircuts</h5>
 						<hr>
-						<p class="content">We Offer Men's, Women's and Children's Haircuts</p>
+						<p class="content">Men's, Women's and Children's Haircuts</p>
 					</div>
 				</div>
 				<div class="col l4 m4 s12">
@@ -309,7 +313,7 @@
 				</div>
 				<div class="col s6 l2 contact_info center">
 					<h6>206-329-3333<hr>1900 East Aloha St, Seattle, WA 98112</h6>
-					<a class="directions waves-effect waves-light btn hide-on-med-and-down">Directions</a>
+					<a id="directions" class="directions waves-effect waves-light btn hide-on-med-and-down">Directions</a>
 					<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22">Directions</a>
 				</div>
 			</div>
