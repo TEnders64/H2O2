@@ -43,52 +43,64 @@
 
 			$(window).resize(function(){
 				var win = $(window);
-				if (win.width() > 860){
+				if (win.width() > 992){
 					$('.parallax').parallax();
 					$('.parallax img').css('height', '750px');
 					$('#building, #salon2').css('bottom', '-50px');
 					$('#salon1, #bottles').css('bottom', '-100px');
-					// $('.building').html('<img id="salon" src="/assets/images/storefront_BW.jpg" alt="salon">');
-					// $('.parallax img').css('height', '1000px');
-					// $('.parallax img').css('width', 'auto');
-					// $('.parallax img').css('bottom', '-150px');
-					// $('.parallax-container').css('height', '400px');
+					// $('#first_service_div').css('margin-top', '50px');
 
-				}else{
+				}else if (win.width() <= 992){
 					$('.parallax').parallax();
-					// $('.parallax img').css('transform', 'none');
-					// $('.building').html('<img id="salon" src="/assets/images/storefront_BW_small.jpg" alt="salon">');
-
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div, div.services_bottom div').css('margin-top', '10px');
+					// if (win.width() < 480){
+					// 	$('#first_service_div').css('margin-top', '50px');
+					// }
 					$('.parallax img').css('height', '450px');
 					$('#building, #salon2').css('bottom', '0px');
 					$('#salon1, #bottles').css('bottom', '0px');
-					// $('.parallax img').css('bottom', '-50px');
-					// $('.parallax-container').css('height', '300px');
+				}else if ((win.width() <= 600) && (win.width() >= 450)){
+					$('.parallax').parallax();
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div, div.services_bottom div').css('margin-top', '0px');
+					$('#first_service_div').css('margin-top', '70px');
+				}else{
+					$('.parallax').parallax();
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div, div.services_bottom div').css('margin-top', '0px');
+					$('#first_service_div').css('margin-top', '50px');
 				}
 			});
 
 			var win = $(window);
-			if (win.width() > 860){
+			if (win.width() > 992){
 				$('.parallax').parallax();
 				$('.parallax img').css('height', '750px');
 				$('#building, #salon2').css('bottom', '-50px');
 				$('#salon1, #bottles').css('bottom', '-100px');
-				// $('.building').html('<img id="salon" src="/assets/images/storefront_BW.jpg" alt="salon">');
-				// $('.parallax img').css('height', '1000px');
-				// $('.parallax img').css('width', 'auto');
-				// $('.parallax img').css('bottom', '-150px');
-				// $('.parallax-container').css('height', '400px');
+				// $('#first_service_div').css('margin-top', '50px');
 
-			}else{
+			}else if (win.width() <= 992){
 				$('.parallax').parallax();
-				// $('.parallax img').css('transform', 'none');
-				// console.log('window width under 860!');
-				// $('.building').html('<img id="salon" src="/assets/images/storefront_BW_small.jpg" alt="salon">');
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div, div.services_bottom div').css('margin-top', '10px');
+				
 				$('.parallax img').css('height', '450px');
 				$('#building, #salon2').css('bottom', '0px');
 				$('#salon1, #bottles').css('bottom', '0px');
 
 				// $('.parallax-container').css('height', '300px');
+			}else if ((win.width() <= 600) && (win.width() >= 450)){
+				$('.parallax').parallax();
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div, div.services_bottom div').css('margin-top', '0px');
+				$('#first_service_div').css('margin-top', '70px');
+			}else{
+				$('.parallax').parallax();
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div, div.services_bottom div').css('margin-top', '0px');
+				$('#first_service_div').css('margin-top', '50px');
 			}
 
 			//activating the hamburger side nav
@@ -203,10 +215,11 @@
 		<div class="section center z-depth-2">
 			<div id="services" class="row services">
 				<h3 class="header center">Services</h3>
-				<div class="col l4 m4 s12">
+				<div id="first_service_div" class="col l4 m4 s12">
 					<div class="bordering">
 						<img id="scissors" src="/assets/images/scissors2.png" alt="haircuts">
 						<h5 class="title">Haircuts</h5>
+						<hr>
 						<p class="content">We Offer Men's, Women's and Children's Haircuts</p>
 					</div>
 				</div>
@@ -214,6 +227,7 @@
 					<div class="bordering">
 						<img src="/assets/images/brush.png" alt="coloring">
 						<h5 class="title">Coloring</h5>
+						<hr>
 						<p class="content">Content</p>
 					</div>
 				</div>
@@ -221,6 +235,7 @@
 					<div class="bordering">
 						<img src="/assets/images/aveda-vector-logo.png" alt="aveda_products">
 						<h5 class="title">Products</h5>
+						<hr>
 						<p class="content">Content</p>
 					</div>
 				</div>
@@ -230,6 +245,7 @@
 					<div class="bordering">
 						<img src="/assets/images/hair_silhouette2.png" alt="styling">
 						<h5 class="title">Styling</h5>
+						<hr>
 						<p class="content">Content</p>
 					</div>
 				</div>
@@ -237,6 +253,7 @@
 					<div class="bordering">
 						<img src="/assets/images/eyebrow.png" alt="waxing">
 						<h5 class="title">Waxing</h5>
+						<hr>
 						<p class="content">Content</p>
 					</div>
 				</div>
@@ -244,6 +261,7 @@
 					<div class="bordering">
 						<img id="perm" src="/assets/images/curl.png" alt="curl">
 						<h5 class="title">Perms</h5>
+						<hr>
 						<p class="content">Content</p>
 					</div>
 				</div>
