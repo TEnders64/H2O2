@@ -289,7 +289,7 @@
 				</div>
 				<div class="col s6 l2 contact_info center">
 					<h6>206-329-3333<hr>1900 East Aloha St, Seattle, WA 98112</h6>
-					<a id="directions" class="waves-effect waves-light btn hide-on-small-only"><i class="material-icons left">navigation</i>Directions</a>
+					<a id="directions" class="waves-effect waves-light btn hide-on-med-and-down"><i class="material-icons left">navigation</i>Directions</a>
 				</div>
 			</div>
 		</div>	
