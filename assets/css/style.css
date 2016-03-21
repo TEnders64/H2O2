@@ -4,7 +4,9 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
-
+/**{
+	outline: 1px solid green;
+}*/
 div.parallax-container{
 	height: 450px;
 }
@@ -92,7 +94,7 @@ div.intro p{
 }
 h3.header{
 	font-family: niconne;
-	margin-top: 0px;
+	margin: 0px;
 }
 a.brand-logo img{
 	width: 100px;
@@ -112,7 +114,7 @@ div.services div{
 }
 div.services_bottom div{
 	position: relative;
-	width: 25%;
+	/*width: 25%;*/
 	height: 200px;
 	display: inline-block;
 	vertical-align: top;
@@ -126,7 +128,7 @@ div.bordering hr{
 }
 div.bordering img{
 	position: absolute;
-	right: -18%;
+	right: -15%;
 	top: 0%;
 	-webkit-transform: translateX(-50%) translateY(-50%);
 	transform: translateX(-50%) translateY(-50%);
@@ -137,7 +139,7 @@ div.bordering img{
 }
 div.bordering img#perm{
 	position: absolute;
-	right: -18%;
+	right: -15%;
 	top: 0%;
 	-ms-transform: rotate(45deg); /* IE 9 */
 	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
@@ -148,8 +150,8 @@ div.bordering img#perm{
 	background-color: #d9e6f2;
 }
 div.services div.bordering, div.services_bottom div.bordering{
-	height: 90%;
-	width: 90%;
+	height: 95%;
+	width: 95%;
 	margin: 10px;
 	padding: 2px;
 	border-top: 2px solid gray;
@@ -163,9 +165,22 @@ div.services h5.title, div.services_bottom h5.title{
 	font-size: 1.8em;
 	padding-top: 10px;
 }
-div.services p.content, div.services_bottom p.content{
-	font-size: 1.5em;
+div.services ul.content, div.services_bottom ul.content{
+	padding: 0px;
+	margin: 0px;
+}
+div.services ul.content li, div.services_bottom ul.content li{
+	font-size: 1.4em;
 	font-family: rust_head;
+}
+div.services ul.content.products li:first-child{
+	font-weight: bolder;
+	text-decoration: underline;
+}
+div.services ul.content.products, div.services ul.content.coloring{
+	display: inline-block;
+	vertical-align: top;
+	width: 48%;
 }
 div.about div{
 	width: 20%;

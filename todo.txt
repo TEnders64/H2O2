@@ -9,9 +9,11 @@ Mobile -
 	- (DONE) Sidenav styling
 	- (DONE) See Google Maps
 	- (DONE - smaller images) My phone takes a long time to load the page...image size? safari?
+	- (DONE) All text now fits inside all containers regardless of the window size
 
 Content - 
-	- Intro and Services sections still need filled in
+	- Intro section still needs filled in
+	- (DONE) Services Section styled and content added
 
 Facebook -
 	Like Us on Facebook?

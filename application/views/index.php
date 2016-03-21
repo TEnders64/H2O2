@@ -43,34 +43,62 @@
 
 			$(window).resize(function(){
 				var win = $(window);
+				console.log(win.width());
 				if (win.width() > 992){
 					$('.parallax').parallax();
 					$('.parallax img').css('height', '750px');
 					$('#building, #salon2').css('bottom', '-50px');
 					$('#salon1, #bottles').css('bottom', '-100px');
-					// $('#first_service_div').css('margin-top', '50px');
+					// $('#first_service_div').css('margin-top', '10px');
+					$('div.services div, div.services_bottom div').css('height', '230px');
 
-				}else if (win.width() <= 992){
+
+				}
+				else if ((win.width() <= 600) && (win.width() >= 450)){
 					$('.parallax').parallax();
+					console.log('between 600/450');
+					$('div.services div, div.services_bottom div').css('height', '220px');
+					$('div.bordering img, div.bordering img#perm').css('width', '15%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+
+					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					// $('div.services div, div.services_bottom div').css('margin-top', '0px');
+					// $('#first_service_div').css('margin-top', '70px');
+				}
+				else if (win.width() < 450){
+					console.log('under 450');
+					$('.parallax').parallax();
+					$('div.services div, div.services_bottom div').css('height', '190px');
 					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
 					$('div.services div, div.services_bottom div').css('margin-top', '10px');
-					// if (win.width() < 480){
-					// 	$('#first_service_div').css('margin-top', '50px');
-					// }
+					$('div.bordering img, div.bordering img#perm').css('width', '15%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+
+				}
+				else if (win.width() <= 992){
+					$('.parallax').parallax();
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div').css('margin-top', '10px');
+					$('div.services_bottom div').css('margin-top', '20px');
+					$('div.services div, div.services_bottom div').css('height', '280px');
+					
 					$('.parallax img').css('height', '450px');
 					$('#building, #salon2').css('bottom', '0px');
 					$('#salon1, #bottles').css('bottom', '0px');
-				}else if ((win.width() <= 600) && (win.width() >= 450)){
-					$('.parallax').parallax();
+					$('div.bordering img, div.bordering img#perm').css('width', '23%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-15%');
+				}
+				else if (win.width() <= 910){
+					$('div.services div, div.services_bottom div').css('height', '260px');
 
-					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					// $('div.services div, div.services_bottom div').css('margin-top', '0px');
-					$('#first_service_div').css('margin-top', '70px');
-				}else{
+				}
+				else{
 					$('.parallax').parallax();
 					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					// $('div.services div, div.services_bottom div').css('margin-top', '0px');
-					$('#first_service_div').css('margin-top', '50px');
+					$('div.services div, div.services_bottom div').css('margin-top', '0px');
+					$('div.services div, div.services_bottom div').css('height', '220px');
+
+					// $('#first_service_div').css('margin-top', '0px');
 				}
 			});
 
@@ -80,29 +108,57 @@
 				$('.parallax img').css('height', '750px');
 				$('#building, #salon2').css('bottom', '-50px');
 				$('#salon1, #bottles').css('bottom', '-100px');
-				// $('#first_service_div').css('margin-top', '50px');
+				$('div.services div, div.services_bottom div').css('height', '230px');
 
-			}else if (win.width() <= 992){
+				// $('#first_service_div').css('margin-top', '0px');
+
+			}
+			//anything greater than 600 needs a new height!!!!
+			else if ((win.width() <= 600) && (win.width() >= 450)){
 				$('.parallax').parallax();
+				console.log('between 600/450');
+				// $('div.services div, div.services_bottom div').css('height', '272px');
+				$('div.services div, div.services_bottom div').css('margin-top', '0px');
+				// $('#first_service_div').css('margin-top', '70px');
+				$('div.services div, div.services_bottom div').css('height', '220px');
+				$('div.bordering img, div.bordering img#perm').css('width', '15%');
+				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+
+			}
+			else if (win.width() < 450){
+				console.log('under 450');
+				$('.parallax').parallax();
+				$('div.services div, div.services_bottom div').css('height', '190px');
 				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
 				$('div.services div, div.services_bottom div').css('margin-top', '10px');
-				
+				$('div.bordering img, div.bordering img#perm').css('width', '15%');
+				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+
+			}
+			else if (win.width() <= 992){
+				$('.parallax').parallax();
+				$('div.services div, div.services_bottom div').css('height', '280px');
+
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div').css('margin-top', '10px');
+				$('div.services_bottom div').css('margin-top', '20px');
+
 				$('.parallax img').css('height', '450px');
 				$('#building, #salon2').css('bottom', '0px');
 				$('#salon1, #bottles').css('bottom', '0px');
 
+				$('div.bordering img, div.bordering img#perm').css('width', '23%');
+				$('div.bordering img, div.bordering img#perm').css('right', '-15%');
 				// $('.parallax-container').css('height', '300px');
-			}else if ((win.width() <= 600) && (win.width() >= 450)){
+			}
+			else{
 				$('.parallax').parallax();
-				
+				// $('div.services div, div.services_bottom div').css('height', 'auto');
+				$('div.services div, div.services_bottom div').css('height', '220px');
+
 				// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				// $('div.services div, div.services_bottom div').css('margin-top', '0px');
-				$('#first_service_div').css('margin-top', '70px');
-			}else{
-				$('.parallax').parallax();
-				// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				// $('div.services div, div.services_bottom div').css('margin-top', '0px');
-				$('#first_service_div').css('margin-top', '50px');
+				$('div.services div, div.services_bottom div').css('margin-top', '0px');
+				// $('#first_service_div').css('margin-top', '0px');
 			}
 
 			//activating the hamburger side nav
@@ -226,15 +282,11 @@
 						<img id="scissors" src="/assets/images/scissors2.png" alt="haircuts">
 						<h5 class="title">Haircuts</h5>
 						<hr>
-						<p class="content">Men's, Women's and Children's Haircuts</p>
-					</div>
-				</div>
-				<div class="col l4 m4 s12">
-					<div class="bordering">
-						<img src="/assets/images/brush.png" alt="coloring">
-						<h5 class="title">Coloring</h5>
-						<hr>
-						<p class="content">Content</p>
+						<ul class="content">
+							<li class="flow-text">Men's</li>
+							<li class="flow-text">Women's</li>
+							<li class="flow-text">Children's</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col l4 m4 s12">
@@ -242,7 +294,34 @@
 						<img src="/assets/images/aveda-vector-logo.png" alt="aveda_products">
 						<h5 class="title">Products</h5>
 						<hr>
-						<p class="content">Content</p>
+						<ul class="content products">
+							<li class="flow-text">Aveda</li>
+							<li class="flow-text">Shampoo & Conditioner</li>
+							<li class="flow-text">Styling Products</li>
+							<li class="flow-text">Skincare & Makeup</li>
+						</ul>
+						<ul class="content products">
+							<li class="flow-text">Schwarzkopf</li>
+							<li class="flow-text">Shampoo & Conditioner</li>
+							<li class="flow-text">Styling Products</li>
+						</ul>
+					</div>
+				</div>
+				<div class="col l4 m4 s12">
+					<div class="bordering">
+						<img src="/assets/images/brush.png" alt="coloring">
+						<h5 class="title">Coloring</h5>
+						<hr>
+						<ul class="content coloring">
+							<li class="flow-text">All Over Color</li> 
+							<li class="flow-text">Touch Up Color</li>
+							<li class="flow-text">Color Correction</li>
+						</ul>
+						<ul class="content coloring">
+							<li class="flow-text">Full Foil</li>
+							<li class="flow-text">Partial Foil</li>
+							<li class="flow-text">Ombre</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -252,7 +331,12 @@
 						<img src="/assets/images/hair_silhouette2.png" alt="styling">
 						<h5 class="title">Styling</h5>
 						<hr>
-						<p class="content">Content</p>
+						<ul class="content">
+							<li class="flow-text">Up-do's</li>
+							<li class="flow-text">Blowouts</li>
+							<li class="flow-text">Flat-Ironing</li>
+							<li class="flow-text">Styling</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col l4 m4 s12">
@@ -260,7 +344,12 @@
 						<img src="/assets/images/eyebrow.png" alt="waxing">
 						<h5 class="title">Waxing</h5>
 						<hr>
-						<p class="content">Content</p>
+						<ul class="content">
+							<li class="flow-text">Eyebrows</li>
+							<li class="flow-text">Upper Lip</li>
+							<li class="flow-text">Chin</li>
+							<li class="flow-text">Full Face</li>
+						</ul>
 					</div>
 				</div>
 				<div class="col l4 m4 s12">
@@ -268,7 +357,11 @@
 						<img id="perm" src="/assets/images/curl.png" alt="curl">
 						<h5 class="title">Perms</h5>
 						<hr>
-						<p class="content">Content</p>
+						<ul class="content">
+							<li class="flow-text">All Over Perms</li>
+							<li class="flow-text">Partial Perms</li>
+							<li class="flow-text">Straightening</li>
+						</ul>
 					</div>
 				</div>
 			</div>
