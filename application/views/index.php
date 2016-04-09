@@ -45,7 +45,6 @@
 				var win = $(window);
 				console.log(win.width());
 				if (win.width() > 992){
-					$('.parallax').parallax();
 					$('.parallax img').css('height', '750px');
 					$('#building, #salon2').css('bottom', '-50px');
 					$('#salon1, #bottles').css('bottom', '-100px');
@@ -55,7 +54,7 @@
 
 				}
 				else if ((win.width() <= 600) && (win.width() >= 450)){
-					$('.parallax').parallax();
+					// $('.parallax').parallax();
 					console.log('between 600/450');
 					$('div.services div, div.services_bottom div').css('height', '220px');
 					$('div.bordering img, div.bordering img#perm').css('width', '15%');
@@ -67,7 +66,7 @@
 				}
 				else if (win.width() < 450){
 					console.log('under 450');
-					$('.parallax').parallax();
+					// $('.parallax').parallax();
 					$('div.services div, div.services_bottom div').css('height', '190px');
 					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
 					$('div.services div, div.services_bottom div').css('margin-top', '10px');
@@ -76,10 +75,10 @@
 
 				}
 				else if (win.width() <= 992){
-					$('.parallax').parallax();
+					// $('.parallax').parallax();
 					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					$('div.services div').css('margin-top', '10px');
-					$('div.services_bottom div').css('margin-top', '20px');
+					$('div.services div').css('margin-top', '30px');
+					$('div.services_bottom div').css('margin-top', '30px');
 					$('div.services div, div.services_bottom div').css('height', '280px');
 					
 					$('.parallax img').css('height', '450px');
@@ -93,7 +92,7 @@
 
 				}
 				else{
-					$('.parallax').parallax();
+					// $('.parallax').parallax();
 					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
 					$('div.services div, div.services_bottom div').css('margin-top', '0px');
 					$('div.services div, div.services_bottom div').css('height', '220px');
@@ -104,7 +103,7 @@
 
 			var win = $(window);
 			if (win.width() > 992){
-				$('.parallax').parallax();
+				// $('.parallax').parallax();
 				$('.parallax img').css('height', '750px');
 				$('#building, #salon2').css('bottom', '-50px');
 				$('#salon1, #bottles').css('bottom', '-100px');
@@ -115,7 +114,7 @@
 			}
 			//anything greater than 600 needs a new height!!!!
 			else if ((win.width() <= 600) && (win.width() >= 450)){
-				$('.parallax').parallax();
+				// $('.parallax').parallax();
 				console.log('between 600/450');
 				// $('div.services div, div.services_bottom div').css('height', '272px');
 				$('div.services div, div.services_bottom div').css('margin-top', '0px');
@@ -127,7 +126,7 @@
 			}
 			else if (win.width() < 450){
 				console.log('under 450');
-				$('.parallax').parallax();
+				// $('.parallax').parallax();
 				$('div.services div, div.services_bottom div').css('height', '190px');
 				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
 				$('div.services div, div.services_bottom div').css('margin-top', '10px');
@@ -136,12 +135,12 @@
 
 			}
 			else if (win.width() <= 992){
-				$('.parallax').parallax();
+				// $('.parallax').parallax();
 				$('div.services div, div.services_bottom div').css('height', '280px');
 
 				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				$('div.services div').css('margin-top', '10px');
-				$('div.services_bottom div').css('margin-top', '20px');
+				$('div.services div').css('margin-top', '30px');
+				$('div.services_bottom div').css('margin-top', '30px');
 
 				$('.parallax img').css('height', '450px');
 				$('#building, #salon2').css('bottom', '0px');
@@ -152,7 +151,7 @@
 				// $('.parallax-container').css('height', '300px');
 			}
 			else{
-				$('.parallax').parallax();
+				// $('.parallax').parallax();
 				// $('div.services div, div.services_bottom div').css('height', 'auto');
 				$('div.services div, div.services_bottom div').css('height', '220px');
 
@@ -167,13 +166,12 @@
 				closeOnClick: true
 			});
 
+			$('.parallax').parallax();
 			$('li.icons div, h6.contact_info, ul#slide-out li').addClass('valign-wrapper');
 			$('li.icons img, ul#slide-out a').addClass('valign');
-			$('div.services div.bordering, div.about div, div.services_bottom div.bordering').addClass('hoverable');
-
+			// $('div.services div.bordering, div.about div, div.services_bottom div.bordering').addClass('hoverable');
 			var map;
 			var marker;
-			// var salon = {lat: 47.6270111, lng: -122.307025};
 			var salon = {lat: 47.6269551, lng: -122.3092533};
 
 			function initialize(){
@@ -406,8 +404,8 @@
 				</div>
 				<div class="col s6 l2 contact_info center">
 					<h6>206-329-3333<hr>1900 East Aloha St, Seattle, WA 98112</h6>
-					<a id="directions" class="directions waves-effect waves-light btn hide-on-med-and-down">Directions</a>
-					<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22">Directions</a>
+					<a id="directions" class="directions waves-effect waves-light btn-large hide-on-med-and-down">Directions</a>
+					<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22" target="_blank">Directions</a>
 				</div>
 			</div>
 		</div>	

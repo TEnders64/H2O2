@@ -135,6 +135,7 @@ div.bordering img{
 	width: 23%;
 	height: auto;
 	border-radius: 50%;
+	border: 2px solid #d9e6f2;
     background-color: #d9e6f2;
 }
 div.bordering img#perm{
@@ -147,6 +148,7 @@ div.bordering img#perm{
 	width: 23%;
 	height: auto;
 	border-radius: 50%;
+	border: 2px solid #d9e6f2;
 	background-color: #d9e6f2;
 }
 div.services div.bordering, div.services_bottom div.bordering{
@@ -154,8 +156,8 @@ div.services div.bordering, div.services_bottom div.bordering{
 	width: 95%;
 	margin: 10px;
 	padding: 2px;
-	border-top: 2px solid gray;
-	border-right: 1px solid gray;
+	border-top: 2px solid #093359;
+	border-right: 1px solid #093359;
 	border-radius: 20px;
 	background-color: #6699cc;
 	color: black;
