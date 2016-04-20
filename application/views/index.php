@@ -23,19 +23,19 @@
 		  	document.querySelector('head').appendChild(msViewportStyle)
 		}
 		//accounting for fixed navbar covering the initial content when jumping from hash to hash
-		function shiftWindow(){ 
+		function shiftWindow(){
 			if (window.location.hash !== '#contact'){
 				scrollBy(0, -70);
 			}else{
 				scrollBy(0, -30);
 			}
 		}
-		
+
 		window.addEventListener("hashchange", shiftWindow);
-		
+
 		function load() {
 			if (window.location.hash) {
-				shiftWindow(); 
+				shiftWindow();
 			}
 		}
 
@@ -44,16 +44,32 @@
 			$(window).resize(function(){
 				var win = $(window);
 				console.log(win.width());
-				if (win.width() > 992){
-					$('.parallax img').css('height', '750px');
-					$('#building, #salon2').css('bottom', '-50px');
-					$('#salon1, #bottles').css('bottom', '-100px');
-					// $('#first_service_div').css('margin-top', '10px');
-					$('div.services div, div.services_bottom div').css('height', '230px');
-
-
+				if (win.width() <= 320){
+					$('div.parallax-container.building.first').css('height','450px');
+					$('div.services div, div.services_bottom div').css('height', '240px');
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div, div.services_bottom div').css('margin-top', '10px');
+					$('div.bordering img, div.bordering img#perm').css('width', '15%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-10%');
 				}
-				else if ((win.width() <= 600) && (win.width() >= 450)){
+				else if (win.width() < 400){
+					$('div.parallax-container.building.first').css('height','450px');
+					$('div.services div, div.services_bottom div').css('height', '220px');
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div, div.services_bottom div').css('margin-top', '10px');
+					$('div.bordering img, div.bordering img#perm').css('width', '15%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+				}
+				if (win.width() < 450){
+					$('div.parallax-container.building.first').css('height','450px');
+
+					$('div.services div, div.services_bottom div').css('height', '190px');
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div, div.services_bottom div').css('margin-top', '10px');
+					$('div.bordering img, div.bordering img#perm').css('width', '15%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+				}
+				else if (win.width() <= 600){
 					// $('.parallax').parallax();
 					console.log('between 600/450');
 					$('div.services div, div.services_bottom div').css('height', '220px');
@@ -64,56 +80,80 @@
 					// $('div.services div, div.services_bottom div').css('margin-top', '0px');
 					// $('#first_service_div').css('margin-top', '70px');
 				}
-				else if (win.width() < 450){
-					console.log('under 450');
-					// $('.parallax').parallax();
-					$('div.services div, div.services_bottom div').css('height', '190px');
-					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					$('div.services div, div.services_bottom div').css('margin-top', '10px');
-					$('div.bordering img, div.bordering img#perm').css('width', '15%');
-					$('div.bordering img, div.bordering img#perm').css('right', '-10%');
-
-				}
-				else if (win.width() <= 992){
-					// $('.parallax').parallax();
-					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					$('div.services div').css('margin-top', '30px');
-					$('div.services_bottom div').css('margin-top', '30px');
-					$('div.services div, div.services_bottom div').css('height', '280px');
-					
-					$('.parallax img').css('height', '450px');
-					$('#building, #salon2').css('bottom', '0px');
-					$('#salon1, #bottles').css('bottom', '0px');
-					$('div.bordering img, div.bordering img#perm').css('width', '23%');
-					$('div.bordering img, div.bordering img#perm').css('right', '-15%');
-				}
-				else if (win.width() <= 910){
-					$('div.services div, div.services_bottom div').css('height', '260px');
-
-				}
 				else{
-					// $('.parallax').parallax();
-					// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-					$('div.services div, div.services_bottom div').css('margin-top', '0px');
-					$('div.services div, div.services_bottom div').css('height', '220px');
+					// conditions where width of window is greater than 600px...
 
-					// $('#first_service_div').css('margin-top', '0px');
+					if (win.width() <= 992){
+						// $('.parallax').parallax();
+						$('div.services div, div.services_bottom div').css('margin-top', '30px');
+						$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+						$('div.services div').css('margin-top', '30px');
+						$('div.services_bottom div').css('margin-top', '30px');
+						$('div.services div, div.services_bottom div').css('height', '280px');
+
+						$('.parallax img').css('height', '450px');
+						// console.log('div.parallax-container.building.first');
+						$('div.parallax-container').css('height', '480px')
+
+
+						$('#building, #salon2').css('bottom', '0px');
+						$('#salon1, #bottles').css('bottom', '0px');
+						$('div.bordering img, div.bordering img#perm').css('width', '23%');
+						$('div.bordering img, div.bordering img#perm').css('right', '-15%');
+					}
+					else if (win.width() > 992){
+						$('.parallax img').css('height', '750px');
+						$('div.parallax-container').css('height', '490px');
+
+						$('#building, #salon2').css('bottom', '-50px');
+						$('#salon1, #bottles').css('bottom', '-100px');
+						// $('#first_service_div').css('margin-top', '10px');
+						$('div.services div, div.services_bottom div').css('height', '230px');
+
+						$('div.services div, div.services_bottom div').css('margin-top', '20px');
+
+					}
+					// else if (win.width() <= 910){
+					// 	$('div.services div, div.services_bottom div').css('height', '260px');
+
+					// }
+					// else{
+					// 	// $('.parallax').parallax();
+					// 	// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					// 	$('div.services div, div.services_bottom div').css('height', '220px');
+
+					// 	// $('#first_service_div').css('margin-top', '0px');
+					// }
 				}
 			});
 
 			var win = $(window);
-			if (win.width() > 992){
-				// $('.parallax').parallax();
-				$('.parallax img').css('height', '750px');
-				$('#building, #salon2').css('bottom', '-50px');
-				$('#salon1, #bottles').css('bottom', '-100px');
-				$('div.services div, div.services_bottom div').css('height', '230px');
-
-				// $('#first_service_div').css('margin-top', '0px');
-
+			if (win.width() <= 320){
+				$('div.parallax-container.building.first').css('height','450px');
+				$('div.services div, div.services_bottom div').css('height', '240px');
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div, div.services_bottom div').css('margin-top', '10px');
+				$('div.bordering img, div.bordering img#perm').css('width', '15%');
+				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+			}
+			else if (win.width() < 400){
+				$('div.parallax-container.building.first').css('height','450px');
+				$('div.services div, div.services_bottom div').css('height', '220px');
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div, div.services_bottom div').css('margin-top', '10px');
+				$('div.bordering img, div.bordering img#perm').css('width', '15%');
+				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
+			}
+			else if (win.width() < 450){
+				$('div.parallax-container.building.first').css('height','450px');
+				$('div.services div, div.services_bottom div').css('height', '190px');
+				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				$('div.services div, div.services_bottom div').css('margin-top', '10px');
+				$('div.bordering img, div.bordering img#perm').css('width', '15%');
+				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
 			}
 			//anything greater than 600 needs a new height!!!!
-			else if ((win.width() <= 600) && (win.width() >= 450)){
+			else if (win.width() <= 600){
 				// $('.parallax').parallax();
 				console.log('between 600/450');
 				// $('div.services div, div.services_bottom div').css('height', '272px');
@@ -124,40 +164,48 @@
 				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
 
 			}
-			else if (win.width() < 450){
-				console.log('under 450');
-				// $('.parallax').parallax();
-				$('div.services div, div.services_bottom div').css('height', '190px');
-				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				$('div.services div, div.services_bottom div').css('margin-top', '10px');
-				$('div.bordering img, div.bordering img#perm').css('width', '15%');
-				$('div.bordering img, div.bordering img#perm').css('right', '-10%');
-
-			}
-			else if (win.width() <= 992){
-				// $('.parallax').parallax();
-				$('div.services div, div.services_bottom div').css('height', '280px');
-
-				$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				$('div.services div').css('margin-top', '30px');
-				$('div.services_bottom div').css('margin-top', '30px');
-
-				$('.parallax img').css('height', '450px');
-				$('#building, #salon2').css('bottom', '0px');
-				$('#salon1, #bottles').css('bottom', '0px');
-
-				$('div.bordering img, div.bordering img#perm').css('width', '23%');
-				$('div.bordering img, div.bordering img#perm').css('right', '-15%');
-				// $('.parallax-container').css('height', '300px');
-			}
 			else{
-				// $('.parallax').parallax();
-				// $('div.services div, div.services_bottom div').css('height', 'auto');
-				$('div.services div, div.services_bottom div').css('height', '220px');
+				//conditions where window is wider than 600px...
+				if (win.width() <= 992){
+					// $('.parallax').parallax();
 
-				// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
-				$('div.services div, div.services_bottom div').css('margin-top', '0px');
-				// $('#first_service_div').css('margin-top', '0px');
+					$('div.services div, div.services_bottom div').css('height', '280px');
+					$('div.services div, div.services_bottom div').css('margin-top', '30px');
+
+					$('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+					$('div.services div').css('margin-top', '30px');
+					$('div.services_bottom div').css('margin-top', '30px');
+
+					$('.parallax img').css('height', '450px');
+					$('div.parallax-container').css('height', '480px');
+					$('#building, #salon2').css('bottom', '0px');
+					$('#salon1, #bottles').css('bottom', '0px');
+
+					$('div.bordering img, div.bordering img#perm').css('width', '23%');
+					$('div.bordering img, div.bordering img#perm').css('right', '-15%');
+					// $('.parallax-container').css('height', '300px');
+				}
+				else if (win.width() > 992){
+					// $('.parallax').parallax();
+					$('.parallax img').css('height', '750px');
+					$('div.parallax-container').css('height', '490px');
+
+					$('#building, #salon2').css('bottom', '-50px');
+					$('#salon1, #bottles').css('bottom', '-100px');
+					$('div.services div, div.services_bottom div').css('height', '230px');
+
+					// $('#first_service_div').css('margin-top', '0px');
+
+					$('div.services div, div.services_bottom div').css('margin-top', '20px');
+				}
+				// else{
+				// 	// $('.parallax').parallax();
+				// 	// $('div.services div, div.services_bottom div').css('height', 'auto');
+				// 	$('div.services div, div.services_bottom div').css('height', '220px');
+
+				// 	// $('div.services div, div.services_bottom div').css('margin-bottom', '30px');
+				// 	// $('#first_service_div').css('margin-top', '0px');
+				// }
 			}
 
 			//activating the hamburger side nav
@@ -214,7 +262,7 @@
 
 			function getPosition(pos){
 				coords = {
-					lat: pos.coords.latitude, 
+					lat: pos.coords.latitude,
 					lng: pos.coords.longitude
 					};
 
@@ -233,11 +281,11 @@
 				var request = {
 					destination: salon,
 					origin: user_location,
-					travelMode: google.maps.TravelMode.DRIVING 
+					travelMode: google.maps.TravelMode.DRIVING
 				};
-				
+
 				var directionsService = new google.maps.DirectionsService();
-				  
+
 				directionsService.route(request, function(response, status) {
 				    if (status === google.maps.DirectionsStatus.OK) {
 				      // Display the route on the map.
@@ -256,7 +304,7 @@
 <body id="top" onload="load()">
 	<?php $this->load->view('/partials/header'); ?>
 	<main>
-		<div class="parallax-container">
+		<div class="parallax-container building first">
 			<div class="parallax"><img id="building" src="/assets/images/storefront_BW_copy.jpg" alt="salon"></div>
 		</div>
 		<div class="section intro z-depth-2">
@@ -288,18 +336,19 @@
 					</div>
 				</div>
 				<div class="col l4 m4 s12">
-					<div class="bordering">
+					<div class="bordering product-container">
 						<img src="/assets/images/aveda-vector-logo.png" alt="aveda_products">
 						<h5 class="title">Products</h5>
 						<hr>
 						<ul class="content products">
-							<li class="flow-text">Aveda</li>
+							<li class="flow-text">Aveda&#8482</li>
 							<li class="flow-text">Shampoo & Conditioner</li>
 							<li class="flow-text">Styling Products</li>
 							<li class="flow-text">Skincare & Makeup</li>
 						</ul>
 						<ul class="content products">
-							<li class="flow-text">Schwarzkopf</li>
+							<li class="flow-text">Schwarzkopf&#8482</li>
+							<li class="flow-text">Color</li>
 							<li class="flow-text">Shampoo & Conditioner</li>
 							<li class="flow-text">Styling Products</li>
 						</ul>
@@ -311,7 +360,7 @@
 						<h5 class="title">Coloring</h5>
 						<hr>
 						<ul class="content coloring">
-							<li class="flow-text">All Over Color</li> 
+							<li class="flow-text">All Over Color</li>
 							<li class="flow-text">Touch Up Color</li>
 							<li class="flow-text">Color Correction</li>
 						</ul>
@@ -346,7 +395,6 @@
 							<li class="flow-text">Eyebrows</li>
 							<li class="flow-text">Upper Lip</li>
 							<li class="flow-text">Chin</li>
-							<li class="flow-text">Full Face</li>
 						</ul>
 					</div>
 				</div>
@@ -358,7 +406,7 @@
 						<ul class="content">
 							<li class="flow-text">All Over Perms</li>
 							<li class="flow-text">Partial Perms</li>
-							<li class="flow-text">Straightening</li>
+							<li class="flow-text">Organic&#8482 Curl System</li>
 						</ul>
 					</div>
 				</div>
@@ -398,17 +446,19 @@
 		<div class="section center z-depth-2">
 			<div class="row contact">
 				<h3 id="contact" class="header">Contact Us</h3>
-				<div class="col s6 l10">
+				<div class="col s12 l10">
 					<div id="right-panel"></div>
 					<div id="map"></div>
 				</div>
-				<div class="col s6 l2 contact_info center">
-					<h6>206-329-3333<hr>1900 East Aloha St, Seattle, WA 98112</h6>
+				<div class="col s12 l2 contact_info center">
+					<h6>1900 East Aloha St, Seattle, WA 98112</h6>
 					<a id="directions" class="directions waves-effect waves-light btn-large hide-on-med-and-down">Directions</a>
 					<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22" target="_blank">Directions</a>
+					<p>Open Tuesday thru Friday and every other Saturday by appointment</p>
+					<h6>206-329-3333</h6>
 				</div>
 			</div>
-		</div>	
+		</div>
 	</main>
 	<?php $this->load->view('/partials/footer'); ?>
 </body>

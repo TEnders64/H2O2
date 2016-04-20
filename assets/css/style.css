@@ -4,9 +4,6 @@
 @-o-viewport        { width: device-width; }
 @viewport           { width: device-width; }
 
-/**{
-	outline: 1px solid green;
-}*/
 div.parallax-container{
 	height: 450px;
 }
@@ -202,10 +199,13 @@ p.stylist_content{
 }
 div.contact{
 	font-family: rust_head;
-	height: 465px;
+	min-height: 465px;
 }
 div.contact_info h6{
 	font-size: 2.0em;
+}
+div.contact_info p{
+	font-size: 1.6em;
 }
 #map{
 	height: 400px;
