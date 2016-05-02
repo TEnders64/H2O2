@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<title>H2O2 - Seattle</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="/assets/css/materialize.min.css">
 		<link rel="stylesheet" href="/assets/css/testing_stylesheet.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -10,23 +11,35 @@
 		<script src="/assets/js/materialize.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB2a6yPTtz9dMjpVlooC_dPP0fBIh1Dod4"></script>
 		<script type="text/javascript">
-			$(document).ready(function(){
-					//accounting for fixed navbar covering the initial content when jumping from hash to hash
-					function shiftWindow(){
-						if (window.location.hash !== '#contact'){
-							scrollBy(0, -80);
-						}else{
-							scrollBy(0, 0);
-						}
-					}
 
-					window.addEventListener("hashchange", shiftWindow);
-
-					function load() {
-						if (window.location.hash) {
-							shiftWindow();
-						}
+				// Copyright 2014-2015 Twitter, Inc.
+				// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+				if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+					var msViewportStyle = document.createElement('style')
+					msViewportStyle.appendChild(
+				    	document.createTextNode(
+				    		'@-ms-viewport{width:auto!important}'
+				    	)
+				  	)
+				  	document.querySelector('head').appendChild(msViewportStyle)
+				}
+				//accounting for fixed navbar covering the initial content when jumping from hash to hash
+				function shiftWindow(){
+					if (window.location.hash !== '#contact'){
+						scrollBy(0, -80);
+					}else{
+						scrollBy(0, 0);
 					}
+				}
+
+				window.addEventListener("hashchange", shiftWindow);
+
+				function load() {
+					if (window.location.hash) {
+						shiftWindow();
+					}
+				}
+				$(document).ready(function(){
 
 					//activating parallax
 					$('.parallax').parallax();
@@ -120,7 +133,7 @@
 			});
 		</script>
 	</head>
-	<body>
+	<body onload="load()">
 		<?php $this->load->view('/partials/header'); ?>
 		<main>
 			<div class="parallax-container">
