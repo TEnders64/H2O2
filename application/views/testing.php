@@ -159,7 +159,7 @@
 					</ul>
 			  </div>
 				<div class="col s12 m6">
-					<img src="/assets/images/art2_BW_small.jpg" alt="artwork" />
+					<img src="/assets/images/art2_BW_small.jpeg" alt="artwork" />
 				</div>
 			</div>
 			<div class="parallax-container">
