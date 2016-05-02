@@ -49,6 +49,11 @@
 						closeOnClick: true
 					});
 
+					//mobile windows...translating the salon images right a bit
+					var win = $(window);
+					if (win.width() <= 600){
+						$('#salon1, #salon2').css('left','100%');
+					}
 					//google Maps API
 					var map;
 					var marker;
@@ -180,13 +185,13 @@
 				<div class="service_div col s12 m6 l4 products">
 					<h3>Products</h3>
 					<ul>
-						<li><u>Aveda</u>&#8482</li>
+						<li><b><u>Aveda</u>&#8482</b></li>
 						<li>Shampoo & Conditioner</li>
 						<li>Styling Products</li>
 						<li>Skincare & Makeup</li>
 					</ul>
 					<ul>
-						<li><u>Schwarkopf</u>&#8482</li>
+						<li><b><u>Schwarkopf</u>&#8482</b></li>
 						<li>Color</li>
 						<li>Shampoo & Conditioner</li>
 						<li>Styling Products</li>

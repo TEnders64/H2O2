@@ -4,7 +4,8 @@ class Home extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('index');
+		$this->load->view('testing');
+		// $this->load->view('index');
 	}
 
 	public function about()
