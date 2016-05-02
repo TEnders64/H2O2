@@ -10,15 +10,15 @@
             <li><a href="#contact"><i class="material-icons">settings_phone</i> Contact</a></li>
             <li class="icons">
               <a href="https://www.facebook.com/H202-Salon-212145560500" target="_blank">
-                <div>
-                  <img id="fbook" src="/assets/images/fb_logo_white_72.png" alt="facebook">
+                <div class="valign-wrapper">
+                  <img id="fbook" src="/assets/images/fb_logo_white_72.png" alt="facebook" class="valign">
                 </div>
               </a>
             </li>
             <li class="icons">
               <a href="http://www.yelp.com/biz/h2o2-seattle" target="_blank">
-                <div>
-                  <img id="yelp" src="/assets/images/yelp.png" alt="yelp">
+                <div class="valign-wrapper">
+                  <img id="yelp" src="/assets/images/yelp.png" alt="yelp" class="valign">
                 </div>
               </a>
             </li>

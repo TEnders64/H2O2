@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>H2O2 - Capitol Hill</title>
 	<link rel="stylesheet" href="/assets/css/materialize.min.css">
-	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/stylesheet2.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<script src="/assets/js/jquery-1.11.3.min.js"></script>
 	<script src="/assets/js/materialize.min.js"></script>
@@ -218,6 +218,8 @@
 			$('li.icons div, h6.contact_info, ul#slide-out li').addClass('valign-wrapper');
 			$('li.icons img, ul#slide-out a').addClass('valign');
 			// $('div.services div.bordering, div.about div, div.services_bottom div.bordering').addClass('hoverable');
+
+			//Google Maps Portion
 			var map;
 			var marker;
 			var salon = {lat: 47.6269551, lng: -122.3092533};
@@ -446,16 +448,16 @@
 		<div class="section center z-depth-2">
 			<div class="row contact">
 				<h3 id="contact" class="header">Contact Us</h3>
-				<div class="col s12 l10">
+				<div class="col s12 m8">
 					<div id="right-panel"></div>
 					<div id="map"></div>
 				</div>
-				<div class="col s12 l2 contact_info center">
+				<div class="col s12 m4 contact_info center">
 					<h6>1900 East Aloha St, Seattle, WA 98112</h6>
+					<p>Open Tuesday thru Friday and every other Saturday by appointment</p>
+					<h6 class="hide-on-med-and-down">Phone: 206-329-3333</h6>
 					<a id="directions" class="directions waves-effect waves-light btn-large hide-on-med-and-down">Directions</a>
 					<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22" target="_blank">Directions</a>
-					<p>Open Tuesday thru Friday and every other Saturday by appointment</p>
-					<h6>206-329-3333</h6>
 				</div>
 			</div>
 		</div>

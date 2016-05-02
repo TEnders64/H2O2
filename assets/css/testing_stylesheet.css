@@ -1,0 +1,258 @@
+*{
+  /*outline: 1px solid red;*/
+}
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: #f2f2f2;
+}
+@font-face {
+    font-family: rust;
+    src: url("/assets/font/rust.ttf");
+}
+@font-face {
+	font-family: rust_head;
+	src: url("/assets/font/rust_head.ttf");
+}
+@font-face {
+	font-family: niconne;
+	src: url("/assets/font/niconne.ttf");
+}
+nav, nav ul a{
+	font-family: rust_head;
+	font-size: 1.2em;
+	background-color: #093359;
+	padding: 0 10px;
+}
+nav .nav-wrapper i{
+	display: inline-block;
+	vertical-align: top;
+}
+nav ul li:first-child{
+	padding: 0px 15px;
+}
+nav ul.side-nav li{
+	padding: 0px;
+}
+nav ul.side-nav a{
+	width: 100%;
+	font-family: rust_head;
+	font-size: 1.5em;
+	background-color: white;
+	color: black;
+}
+nav ul.side-nav i{
+	padding-top: 15px;
+}
+nav ul.side-nav li.icons{
+	display: inline-block;
+	width: 45%;
+}
+a.brand-logo{
+	height: 64px;
+}
+a.brand-logo>img{
+	margin-top: 3px;
+}
+li.icons div{
+	height: 64px;
+}
+li.icons a{
+	/*background: lightblue;*/
+}
+#fbook{
+	height: 22px;
+	width: auto;
+}
+#yelp{
+	height: 30px;
+	width: auto;
+}
+a.brand-logo img{
+  width: 100px;
+  height: auto;
+}
+#building, #salon2{
+  bottom: -50px;
+}
+#salon1, #bottles{
+  bottom: -100px;
+}
+div.parallax-container{
+  height: 450px;
+}
+div.parallax img{
+  height: 750px;
+  width: auto;
+}
+div.section{
+  min-height: 500px;
+  padding: 0px;
+  margin-bottom: 0px;
+  background-color: #f2f2f2;
+}
+div.intro{
+  font-family: rust_head;
+}
+div.intro p{
+  margin: 0px;
+  font-size: 1.8em;
+}
+div.intro h6{
+  margin-top: 0px;
+  font-size: 1.6em;
+  display: inline-block;
+  vertical-align: top;
+}
+div.intro ul{
+  margin: 0px 10px;
+  display: inline-block;
+  vertical-align: top;
+  font-size: 1.2em;
+}
+div.intro img{
+  width: 100%;
+  height: auto;
+}
+h1{
+  margin: 20px 0px;
+  text-align: center;
+  font-family: niconne;
+}
+div.service_div{
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+}
+div.service_div h3{
+  margin-top: 5px;
+  font-family: rust_head;
+  text-align: right;
+  height: 1em;
+}
+div.service_div ul{
+  text-align: right;
+  font-family: rust_head;
+  font-size: 1.15em;
+}
+div.service_div.haircuts{
+  background: url('/assets/images/scissors2-inverted.png');
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-color: #000066;
+  color: white;
+}
+div.service_div.products{
+  background: url('/assets/images/aveda-vector-logo.png');
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-color: #6699cc;
+  color: black;
+}
+div.service_div.coloring{
+  background: url('/assets/images/brush-inverted.png');
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-color: #000066;
+
+  color: white;
+}
+div.service_div.styling{
+  background: url('/assets/images/hair_silhouette2.png');
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-color: #f2f2f2;
+  color: black;
+}
+div.service_div.waxing{
+  background: url('/assets/images/eyebrow.png');
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  color: black;
+}
+div.service_div.perms{
+  background: url('/assets/images/curl.png');
+  background-size: 50% auto;
+  background-repeat: no-repeat;
+  background-position: 10% 50%;
+  background-color: #6699cc;
+  color: black;
+}
+div.about{
+  text-align: center;
+}
+div.about h4{
+  color: #093359;
+	font-family: niconne;
+}
+div.about p{
+  font-family: rust_head;
+  font-size: 1.5em;
+}
+div.about hr{
+	width: 50%;
+}
+div.contact{
+	font-family: rust_head;
+	min-height: 465px;
+}
+div.contact_info h6{
+	font-size: 2.0em;
+}
+div.contact_info p{
+	font-size: 1.6em;
+}
+#map{
+	height: 400px;
+}
+#right-panel select, #right-panel input {
+	font-size: 12px;
+}
+#right-panel select {
+	width: 100%;
+}
+#right-panel i {
+	font-size: 12px;
+}
+#right-panel {
+  height: 400px;
+  font-family: rust_head;
+  line-height: 30px;
+  padding-left: 10px;
+  float: right;
+  width: auto;
+  overflow: scroll;
+}
+div.directions_button{
+  margin-bottom: 20px;
+}
+a.directions{
+  margin-top: 10px;
+  background-color: #6699cc;
+  font-size: 1.1em;
+}
+footer.page-footer{
+	height: 57px;
+	padding: 0px;
+	font-family: rust_head;
+	font-size: 1.5em;
+	background-color: #093359;
+}
+footer.page-footer p{
+	height: 57px !important;
+	margin: 0px 30px;
+	display: inline-block;
+	vertical-align: top;
+}
+footer.page-footer img{
+	width: 100px;
+	height: 57px;
+}
+div.footer-copyright{
+	height: 57px !important;
+}
