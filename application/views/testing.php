@@ -52,7 +52,6 @@
 					//mobile windows...translating the salon images right a bit
 					var win = $(window);
 					if (win.width() <= 600){
-						$('#salon1, #salon2').css('left','90%');
 						$('#bottles, #salon1').css('bottom','0px');
 						$('#map, #right-panel').css('height', '200px');
 						$('.parallax img').css('height', '450px');
