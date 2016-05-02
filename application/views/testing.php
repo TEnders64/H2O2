@@ -40,9 +40,9 @@
 					}
 				}
 				$(document).ready(function(){
-
 					//activating parallax
 					$('.parallax').parallax();
+
 					//activating the hamburger side nav
 					$('.button-collapse').sideNav({
 						menuWidth: 200,
@@ -52,8 +52,11 @@
 					//mobile windows...translating the salon images right a bit
 					var win = $(window);
 					if (win.width() <= 600){
-						$('#salon1, #salon2').css('left','100%');
+						$('#salon1, #salon2').css('left','90%');
+						$('#bottles, #salon1').css('bottom','0px');
+						$('.parallax img').css('height', '450px');
 					}
+
 					//google Maps API
 					var map;
 					var marker;
