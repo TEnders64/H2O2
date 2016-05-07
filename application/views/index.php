@@ -3,9 +3,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-	<link rel="icon" href="/favicon.ico" type="image/x-icon">
 	<title>H2O2 - Capitol Hill</title>
+	<link rel="icon" href="<?php echo base_url(); ?>favicon.ico" type="image/gif">
 	<link rel="stylesheet" href="/assets/css/materialize.min.css">
 	<link rel="stylesheet" href="/assets/css/stylesheet2.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
