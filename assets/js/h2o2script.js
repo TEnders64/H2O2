@@ -1,31 +1,31 @@
-// Copyright 2014-2015 Twitter, Inc.
-// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
-	var msViewportStyle = document.createElement('style')
-	msViewportStyle.appendChild(
-    	document.createTextNode(
-    		'@-ms-viewport{width:auto!important}'
-    	)
-  	)
-  	document.querySelector('head').appendChild(msViewportStyle)
-}
-//accounting for fixed navbar covering the initial content when jumping from hash to hash
-function shiftWindow(){
-	if (window.location.hash !== '#contact'){
-		scrollBy(0, -80);
-	}else{
-		scrollBy(0, 0);
-	}
-}
-
-window.addEventListener("hashchange", shiftWindow);
-
-function load() {
-	if (window.location.hash) {
-		shiftWindow();
-	}
-}
 $(document).ready(function(){
+	// Copyright 2014-2015 Twitter, Inc.
+	// Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+	if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
+		var msViewportStyle = document.createElement('style')
+		msViewportStyle.appendChild(
+	    	document.createTextNode(
+	    		'@-ms-viewport{width:auto!important}'
+	    	)
+	  	)
+	  	document.querySelector('head').appendChild(msViewportStyle)
+	}
+	//accounting for fixed navbar covering the initial content when jumping from hash to hash
+	function shiftWindow(){
+		if (window.location.hash !== '#contact'){
+			scrollBy(0, -80);
+		}else{
+			scrollBy(0, 0);
+		}
+	}
+
+	window.addEventListener("hashchange", shiftWindow);
+
+	function load() {
+		if (window.location.hash) {
+			shiftWindow();
+		}
+	}
 	//activating parallax
 	$('.parallax').parallax();
 
