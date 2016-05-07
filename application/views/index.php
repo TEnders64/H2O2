@@ -1,3 +1,4 @@
+		<?php include_once("analyticstracking.php") ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -15,7 +16,6 @@
 		<script src="/assets/js/analytics.js"></script>
 	</head>
 	<body onload="load()">
-		<?php include_once("analyticstracking.php") ?>
 		<?php $this->load->view('/partials/header'); ?>
 		<main>
 			<div class="parallax-container">
