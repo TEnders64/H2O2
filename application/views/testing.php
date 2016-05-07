@@ -250,7 +250,7 @@
 					<p>She's a total sweetheart with a bit of an edge, and is always down for some good tunes.</p>
 				</div>
 				<div class="col s12 m3">
-					<h4>Kasey</h4>
+					<h4>Kayce</h4>
 					<hr>
 					<p>She's fashionable and fun and up on her pop culture for sure.</p>
 				</div>
