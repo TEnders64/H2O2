@@ -5,7 +5,7 @@
 		<title>H2O2 - Seattle</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="/assets/css/materialize.min.css">
-		<link rel="stylesheet" href="/assets/css/testing_stylesheet.css">
+		<link rel="stylesheet" href="/assets/css/style.css">
 		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<script src="/assets/js/jquery-1.11.3.min.js"></script>
 		<script src="/assets/js/materialize.min.js"></script>
