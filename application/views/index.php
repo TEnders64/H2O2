@@ -12,6 +12,7 @@
 		<script src="/assets/js/materialize.min.js"></script>
 		<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyB2a6yPTtz9dMjpVlooC_dPP0fBIh1Dod4"></script>
 		<script src="/assets/js/h2o2script.js"></script>
+		<script src="/assets/js/analytics.js"></script>
 	</head>
 	<body onload="load()">
 		<?php $this->load->view('/partials/header'); ?>
