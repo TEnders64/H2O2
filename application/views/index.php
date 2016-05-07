@@ -2,7 +2,8 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>H2O2 - Seattle</title>
+		<title>H2O2 Salon - Seattle</title>
+		<meta name="description" content="We are a hair salon in Seattle's Capitol Hill neighborhood with many services like perms, coloring, haircuts, waxing, and styling. We're also a licensed Aveda and Schwarzkopf retailer.">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="/assets/css/materialize.min.css">
 		<link rel="stylesheet" href="/assets/css/style.css">
