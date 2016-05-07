@@ -432,7 +432,7 @@
 					<p class="stylist_content">She's a total sweetheart with a bit of an edge, and is always down for some good tunes.</p>
 				</div>
 				<div class="col l3 m3 s12">
-					<h5 class="stylist_name">Kasey</h5>
+					<h5 class="stylist_name">Kayce</h5>
 					<hr>
 					<p class="stylist_content">She's fashionable and fun and up on her pop culture for sure.</p>
 				</div>
