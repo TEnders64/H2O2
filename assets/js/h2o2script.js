@@ -75,7 +75,7 @@ $(document).ready(function(){
 		});
 	}
 
-	$('.row').on('click', '#directions', function (){
+	$('.directions_button').on('click', '#directions', function (){
 		if (navigator.geolocation){
 			var user_position = navigator.geolocation.getCurrentPosition(getPosition);
 
