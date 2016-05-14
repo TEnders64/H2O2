@@ -146,6 +146,9 @@
 					<h6>1900 East Aloha St, Seattle, WA 98112</h6>
 					<p>Open Tuesday thru Friday and every other Saturday by appointment</p>
 					<h6 class="hide-on-med-and-down">Phone: 206-329-3333</h6>
+					<div class="directions_button center">
+					 	<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22" target="_blank">Directions</a>
+				 	</div>
 				</div>
 			</div>
 		</main>
