@@ -99,6 +99,10 @@ $(document).ready(function(){
 	}
 
 	function getDirections(user_location){
+		// <div class="directions_button center">
+		// 	<a id="directions" class="directions waves-effect waves-light btn-large hide-on-med-and-down">Directions</a>
+		// 	<a class="directions waves-effect waves-light btn hide-on-large-only" href="https://www.google.com/maps/place/H2O2/@47.6269551,-122.3092533,17z/data=!4m2!3m1!1s0x549014d5dc06cd0d:0x12d3fe70cb737b22" target="_blank">Directions</a>
+	 	// </div>
 
 		var directionsDisplay = new google.maps.DirectionsRenderer({
 					map: map,
