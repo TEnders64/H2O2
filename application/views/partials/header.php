@@ -4,7 +4,7 @@
     		<a href="#" class="brand-logo"><img src="/assets/images/H2O2_logo-04.png"></a>
     		<ul id="nav" class="wide right hide-on-med-and-down valign-wrapper">
             <li>206-329-3333 | 1900 East Aloha St, Seattle, WA 98112</li>
-            <li><a href="#top"><i class="material-icons">store</i> Home</a></li>
+            <!-- <li><a href="#top"><i class="material-icons">store</i> Home</a></li> -->
             <li><a href="#services"><i class="material-icons">invert_colors</i> Services</a></li>
             <li><a href="#about"><i class="material-icons">person_pin</i> About Us</a></li>
             <li><a href="#contact"><i class="material-icons">settings_phone</i> Contact</a></li>

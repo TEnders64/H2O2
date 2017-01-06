@@ -112,22 +112,17 @@
 			</div>
 			<div class="section about row">
 				<h1 id="about">Our Team</h1>
-				<div class="col s12 m3">
+				<div class="col s12 m4">
 					<h4>Chris</h4>
 					<hr>
 					<p>Salon owner and stylist. She's 5' 10" and cool as hell.</p>
 				</div>
-				<div class="col s12 m3">
+				<div class="col s12 m4">
 					<h4>Olivia</h4>
 					<hr>
 					<p>She's a total sweetheart with a bit of an edge, and is always down for some good tunes.</p>
 				</div>
-				<div class="col s12 m3">
-					<h4>Kayce</h4>
-					<hr>
-					<p>She's fashionable and fun and up on her pop culture for sure.</p>
-				</div>
-				<div class="col s12 m3">
+				<div class="col s12 m4">
 					<h4>Brittany</h4>
 					<hr>
 					<p>She's a world traveler out to save the world with some pretty cool stories.</p>
